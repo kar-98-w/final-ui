@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { Post } from "../types/Post";
 
-const API_BASE = "http://localhost:8080/marron/posts";
+const API_BASE = "https://final-api-zfz3.onrender.com/marron/posts";
 
 export const getAllPosts = async (): Promise<Post[]> => {
   const res = await axios.get<Post[]>(API_BASE);
